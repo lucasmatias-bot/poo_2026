@@ -9,28 +9,28 @@ public class meucarroteste {
 		carro carro02 = new carro();
 		carro carro03 = new carro();
 
-		carro01.marca = "Ford";
-		carro01.modelo ="fusion";
-		carro01.cor = "preto";
-		carro01.placa= "OXE2G66";
-		carro01.combustivel = "flex";
+		carro01.setMarca ("Ford");
+		carro01.setModelo ("fusion");
+		carro01.setCor ("preto");
+		carro01.setPlaca("OXE2G66");
+		carro01.setCombustivel ("flex");
 		
-		carro02.marca = "Mercedes";
-		carro02.modelo ="Classe c sedan";
-		carro02.cor = "prata";
-		carro02.placa= "OXE3G44";
-		carro02.combustivel = "flex";
+		carro02.setMarca  ("Mercedes");
+		carro02.setModelo ("Classe c sedan");
+		carro02.setCor ("prata");
+		carro02.setPlaca ("OXE3G44");
+		carro02.setCombustivel( "flex");
 		
-		carro03.marca = "toyota";
-		carro03.modelo ="Corolla";
-		carro03.cor = "Branco";
-		carro03.placa= "FXF4G77";
-		carro03.combustivel = "flex";
+		carro03.setMarca( "toyota");
+		carro03.setModelo("Corolla");
+		carro03.setCor ( "Branco");
+		carro03.setPlaca ("FXF4G77");
+		carro03.setCombustivel ("flex");
 		
 		System.out. println("Carros do meu estoque:" +
-							carro01.modelo + ", " +
-							carro02.modelo + ", " +
-							carro03.modelo
+							carro01.getPlaca() + ", " +
+							carro02.getPlaca() + ", " +
+							carro03.getPlaca()
 		);
 							
 	}

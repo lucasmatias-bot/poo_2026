@@ -1,35 +1,24 @@
 package inicio;
 
-public class carro {
+public class carro extends Veiculo {
 
-	String cor;
-	String marca;
-	String modelo;
-	String placa;
-	String combustivel;
-	boolean movimento;
-	boolean ligado;
+	private	boolean movimento;
+	private String placa;
 	
 	
-	void acelerar() {
-		if (this.ligado) {
-		this.movimento = true;
-		}else { 
-			this.movimento = false;
-		}
+	public boolean isMovimento() {
+		return movimento;
+	}
+	public void setMovimento(boolean movimento) {
+		this.movimento = movimento;
+	}
+	public String getPlaca() {
+		return placa;
+	}
+	public void setPlaca(String placa) {
+		this.placa = placa;
 	}
 	
-	void freiar() {
-		this.movimento = false;
-	}
-	
-	void ligar() {
-		this.movimento = true;
-	}
-	
-	void desligar() {
-		this.movimento = false;
-	}
 	
 	
 	
